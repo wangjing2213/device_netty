@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.menu.mapper.GroupMenuMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.business.menu.model.GroupMenu">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="group_id" jdbcType="VARCHAR" property="groupId" />
+    <result column="menu_id" jdbcType="VARCHAR" property="menuId" />
+    <result column="creator_id" jdbcType="VARCHAR" property="creatorId" />
+    <result column="ts" jdbcType="TIMESTAMP" property="ts" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.device.mapper.DeviceErrorCountMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.common.device.model.DeviceErrorCount">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="device_no" jdbcType="VARCHAR" property="deviceNo" />
+    <result column="recive_time" jdbcType="TIMESTAMP" property="reciveTime" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+    <result column="lng" jdbcType="VARCHAR" property="lng" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="car_no" jdbcType="VARCHAR" property="carNo" />
+    <result column="drop_time" jdbcType="VARCHAR" property="dropTime" />
+  </resultMap>
+</mapper>

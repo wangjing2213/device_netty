@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.device.mapper.DeviceCommandRecordMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.common.device.model.DeviceCommandRecord">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="device_no" jdbcType="VARCHAR" property="deviceNo" />
+    <result column="request_time" jdbcType="TIMESTAMP" property="requestTime" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="feedback_mark" jdbcType="VARCHAR" property="feedbackMark" />
+    <result column="response_time" jdbcType="TIMESTAMP" property="responseTime" />
+    <result column="command_id" jdbcType="VARCHAR" property="commandId" />
+    <result column="user_id" jdbcType="VARCHAR" property="userId" />
+    <result column="ins_id" jdbcType="VARCHAR" property="insId" />
+    <result column="device_id" jdbcType="VARCHAR" property="deviceId" />
+    <result column="car_id" jdbcType="VARCHAR" property="carId" />
+    <result column="car_no" jdbcType="VARCHAR" property="carNo" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+    <result column="feedback_content" jdbcType="LONGVARCHAR" property="feedbackContent" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.menu.mapper.GroupMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.business.menu.model.Group">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="group_name" jdbcType="VARCHAR" property="groupName" />
+    <result column="group_remark" jdbcType="VARCHAR" property="groupRemark" />
+    <result column="group_creator_id" jdbcType="VARCHAR" property="groupCreatorId" />
+    <result column="group_create_time" jdbcType="TIMESTAMP" property="groupCreateTime" />
+    <result column="ts" jdbcType="TIMESTAMP" property="ts" />
+    <result column="company_id" jdbcType="INTEGER" property="companyId" />
+    <result column="company_sn" jdbcType="VARCHAR" property="companySn" />
+  </resultMap>
+</mapper>

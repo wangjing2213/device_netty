@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.sys.mapper.AreaMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.common.sys.model.Area">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="code" jdbcType="VARCHAR" property="code" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="parent_code" jdbcType="VARCHAR" property="parentCode" />
+    <result column="area_index" jdbcType="INTEGER" property="areaIndex" />
+  </resultMap>
+  <!-- 查询所有城市名称， -->  
+  <select id="getCityList" resultMap="BaseResultMap">  
+    select * from s_area s where s.address like '%市' 
+  </select> 
+  
+</mapper>

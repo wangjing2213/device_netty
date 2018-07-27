@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.common.device.mapper.FenceMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.common.device.model.Fence">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="fence_name" jdbcType="VARCHAR" property="fenceName" />
+    <result column="fence_type" jdbcType="VARCHAR" property="fenceType" />
+    <result column="descl" jdbcType="VARCHAR" property="descl" />
+    <result column="shape" jdbcType="VARCHAR" property="shape" />
+    <result column="center" jdbcType="VARCHAR" property="center" />
+    <result column="radius" jdbcType="REAL" property="radius" />
+    <result column="creator_name" jdbcType="VARCHAR" property="creatorName" />
+    <result column="mode" jdbcType="VARCHAR" property="mode" />
+    <result column="city_name" jdbcType="VARCHAR" property="cityName" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="company_id" jdbcType="INTEGER" property="companyId" />
+    <result column="company_sn" jdbcType="VARCHAR" property="companySn" />
+    <result column="vertexes" jdbcType="LONGVARCHAR" property="vertexes" />
+  </resultMap>
+</mapper>

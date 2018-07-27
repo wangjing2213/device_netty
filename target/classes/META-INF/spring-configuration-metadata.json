@@ -1,0 +1,168 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config",
+      "type": "com.dearho.util.property.ConfigProperties"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis",
+      "type": "com.dearho.generation.config.MybatisConfig"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms",
+      "type": "com.dearho.util.property.SMSProperties"
+    },
+    {
+      "sourceType": "com.dearho.redis.RedisConn",
+      "name": "spring.redis",
+      "type": "com.dearho.redis.RedisConn"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config.common-file-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config.common-image-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config.password-error-account",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config.password-error-minute",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.dearho.util.property.ConfigProperties",
+      "name": "config.version",
+      "description": "省份",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.controller-package",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.domain-object-name",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.domain-object-name-to-lower-case",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.generator-path",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.model-package",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.overwrite",
+      "type": "java.lang.Boolean"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.service-base-interfance",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.service-base-interfance-package",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.generation.config.MybatisConfig",
+      "name": "generator.mybatis.service-package",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.car-information-check-fail",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.car-information-check-success",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-change-password-success",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-change-phone-success",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-information-check-fail",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-information-check-success",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-login",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriber-register",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriebr-change-new-phone",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.util.property.SMSProperties",
+      "name": "sms.subscriebr-change-old-phone",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.redis.RedisConn",
+      "name": "spring.redis.host",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.redis.RedisConn",
+      "name": "spring.redis.password",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.dearho.redis.RedisConn",
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer"
+    },
+    {
+      "sourceType": "com.dearho.redis.RedisConn",
+      "name": "spring.redis.timeout",
+      "type": "java.lang.Integer"
+    }
+  ]
+}

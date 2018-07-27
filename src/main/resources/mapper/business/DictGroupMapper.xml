@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dearho.business.dict.mapper.DictGroupMapper">
+  <resultMap id="BaseResultMap" type="com.dearho.business.dict.model.DictGroup">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="CHAR" property="id" />
+    <result column="code" jdbcType="VARCHAR" property="code" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="creator_id" jdbcType="CHAR" property="creatorId" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="ts" jdbcType="TIMESTAMP" property="ts" />
+    <result column="company_id" jdbcType="INTEGER" property="companyId" />
+    <result column="company_sn" jdbcType="VARCHAR" property="companySn" />
+    <result column="is_system" jdbcType="INTEGER" property="isSystem" />
+  </resultMap>
+  
+   <!-- 查询程序参数name -->  
+  <select id="getDictGroup" parameterType="String" resultMap="BaseResultMap">  
+     	select * from s_dict_group where code = #{code}
+  </select> 
+  
+</mapper>

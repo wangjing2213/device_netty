@@ -1,0 +1,72 @@
+eclipse环境配置
+
+Help-->Eclipse Marketplace-->popular-->安装 spring Tools
+或直接下载ide  https://spring.io/tools/sts/legacy
+
+
+运行入口Application.java
+
+1.代码生成使用方法
+	根据表来创建model、mapper 、service 、controller
+	配置文件：
+		 /resources/generator/config.properties
+			 	targetProject：生成文件的存放目录
+			 	
+			 	几个包名修改成期望的包名
+			 	targetMapperPackage=com.dearho.sys.dict.mapper
+				targetModelPackage =com.dearho.sys.dict.model
+				targetServicePackage=com.dearho.sys.dict.service
+				targetControllerPackage=com.dearho.sys.dict.controller
+		 	
+		 /resources/generator/generatorConfig.xml
+		 		表名				map文件名					实体名称		
+				tableName="s_dict" mapperName="DictMapper" domainObjectName="Dict"
+	
+	运行GeneratorCode 中main方法 生成文件
+
+	文件生成后将
+	 **Mapper.xml 复制到main/resources/mapper/下
+	 其他复制到相应包下
+	 
+2 生成后相应修改
+	model下id此为数据库自增，需手动更改为
+		@GeneratedValue(strategy = GenerationType.IDENTITY)
+		-->
+		@GeneratedValue(generator="UUID")
+
+	各个属性增加相应的add/update 校验规则，
+		GroupUpdate此校验组更新时使用
+		GroupAdd   此校验组添加时使用
+		
+  	@NotNull(message = "ID不能为空", groups = GroupUpdate.class) 
+  	@NotNull(message = "所属公司不能为空", groups = GroupAdd.class)  
+  	
+  	
+ 3.定时器，直接在此目录添加即可无需配置其他
+ 	/src/main/java/com/dearho/quartz/job/*Job.java
+ 	
+ 4.异常返回封装
+ 	/src/main/java/com/dearho/result/GlobalErrorInfoHandler.java
+ 
+ 5.elasticsearch 打算存储用户跟司机的经纬度
+ 	/src/main/java/com/dearho/elasticsearch/controller/CityElasticsearchRestController.java
+ 	
+ 6.Filter 
+ 	如新增Filter 需先在此目录创建Filter /src/main/java/com/dearho/core/filter/
+ 	再在
+ 	/src/main/java/com/dearho/core/filter/ConfigurationFilter.java
+ 	中添加方法
+ 7.properties
+ 	在配置文件中添加以config开头的属性，在configProperties中添加属性，可直接使用，自动注入
+ 	/src/main/java/com/dearho/util/property/ConfigProperties.java
+ 
+ 8.com.dearho.core.config.DataSourceAspect 
+  	切面 根据包名切换数据库
+  	接口IService 切common库
+  	接口business 切business库
+ 
+ 9.自定义 权限菜单注解URLModel
+   有菜单初始化方法，扫描@RequestMapping 和 URLModel 往数据库中添加菜单，不手工维护了
+ 	
+ 	
+ 		
